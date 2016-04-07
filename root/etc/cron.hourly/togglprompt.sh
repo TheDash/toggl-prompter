@@ -6,14 +6,6 @@ OUTPUT=$(zenity --forms --separator="," --text="Toggl Entry" --add-entry=Descrip
 
 echo "$OUTPUT"
 case $? in
-    0)
-        if [ "$OUTPUT"=",," ] 
-            then
-                echo "Using last time entry"
-                exit 0
-        fi
-        ;;
-
     1)
         echo "Using last time entry"
         exit 0
