@@ -31,6 +31,6 @@ IFS="," read -a togglinput <<< "$OUTPUT"
 
 echo  "${togglinput[0]}" "@${togglinput[1]}" "'d'${togglinput[2]}"
 
-toggl.py add ${togglinput[0]} "@${togglinput[1]}" 'd'${togglinput[2]}
+/usr/bin/toggl.py add ${togglinput[0]} "@${togglinput[1]}" 'd'${togglinput[2]}
 
 
