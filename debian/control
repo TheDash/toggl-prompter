@@ -1,0 +1,11 @@
+Source: toggl-prompter
+Section: config
+Priority: extra
+Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9), config-package-dev (>= 4.5~)
+Standards-Version: 3.7.2
+
+Package: toggl-prompter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, chrony
+Description: Prompts you for your Toggl input on your desktop instead of going to the web-page for easier use.
